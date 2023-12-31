@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .event-container {
+            width: 150vh;
+            height: 80vh;
+            margin: 150px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+    
+        h1{
+            color: #333;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    
+        .virtual-meet-buttons {
+            margin-top: 20px;
+        }
+    
+        .virtual-meet-buttons button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 40px;
+            font-size: 30px;
+        }
+    
+        .virtual-meet-buttons button:hover {
+            background-color: #45a049;
+        }
+    
+        /* Add any additional styling as needed */
+    </style>
+    
+</head>
+<body>
+    <!-- Navigation-Bar -->
+    <nav>
+        <ul>
+            <li class="logo">InvestNook</li>
+                <div class="flexbox1">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="InvestorPanel.html">InvestorPanel</a></li>
+                    <li><a href="Event.html">Event</a></li>
+                    <li><a href="Learn.html">Learn</a></li>
+                </div>
+                <div class="flexbox2">
+                    <li><a href="SignIn.html">Sign In</a></li>
+                    <li><a href="GetStarted.html">Get Started</a></li>
+                </div>
+        </ul>
+    </nav>
+    <!-- event start -->
+    <div class="event-container">
+        <h1>Virtual Event - Connect with Investors</h1>
+        <p>Join our virtual event to connect with potential investors and grow your business.</p>
+
+        <div class="virtual-meet-buttons">
+            <button onclick="startGoogleMeet()">Join Google Meet</button>
+            <button onclick="startZoomMeeting()">Join Zoom Meeting</button>
+        </div>
+    </div>
+
+    <script>
+        function startGoogleMeet() {
+            window.location.href = "https://meet.google.com/your-meet-code"; // Replace with your actual Google Meet link
+        }
+
+        function startZoomMeeting() {
+            window.location.href = "https://zoom.us/j/your-zoom-meeting-id"; // Replace with your actual Zoom Meeting link
+        }
+    </script>
+    <!-- event end -->
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">InvestNook</div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="#" target="_blank"><img src="facebook.jpg" height="100px" width="100px" alt="Facebook"></a></li>
+                <li><a href="#" target="_blank"><img src="twitter.jpg" height="100px" width="100px" alt="Twitter"></a></li>
+                <li><a href="#" target="_blank"><img src="linkedin.jpg" height="100px" width="150px" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-disclaimer">
+        &copy; 2023 InvestNook. All rights reserved.
+    </div>
+</footer>
+</html>

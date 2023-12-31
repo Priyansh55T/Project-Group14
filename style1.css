@@ -1,0 +1,172 @@
+/*styling of body*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*styling for navigation bar unordered list*/
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(29, 92, 239);
+    padding: 10px;
+    font-size: 50px;
+    margin: 0;
+    align-items: center;
+}
+
+/*styling of InvestNook Logo*/
+.logo {
+    margin-right: 100px;
+    color: white;
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+/*styling for first flexbox1*/
+.flexbox1 {
+    display: flex;
+}
+
+/*styling for flexbox1 li*/
+.flexbox1 li {
+    margin-right: 80px;/*space between option in flexbox1 */
+}
+
+/*styling for flexbox1 hyperlink*/
+.flexbox1 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Adjusted the positioning of flexbox2 */
+.flexbox2 {
+    margin-left: auto; /* Push the flex container to the right */
+    display: flex; /*align sign in and get started horizontally*/
+}
+
+
+/*styling for flexbox2 hyperlink*/
+.flexbox2 li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+/*styling for First Heading*/
+.Introduction {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: rgb(14, 151, 196);
+    font-weight: bold; 
+    line-height: 1.4; 
+}
+
+/*styling for second heading*/
+.Introduction2 {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: rgb(14, 151, 196);
+}
+
+/*styling for third heading*/
+.Introduction3 {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: rgb(14, 151, 196);
+}
+
+/* Add styles for the image sequence */
+.image-sequence {
+    position: relative;/*consider relative position with respect to an element*/
+    display: flex;/*assign image horizontally*/ 
+    margin-top: 70px; /* Add some top margin for spacing */
+}
+
+/*add style to all images*/
+.image-sequence img {
+    max-width: 100%; /* Make sure images don't exceed their container width */
+    height: auto; /* Maintain the aspect ratio of the images */
+}
+
+/*individual images styling*/
+.img1 {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.img2 {
+    margin-right: 100px;
+}
+
+/*styling for footer*/
+footer {/*over all over the footer*/
+    position: relative;
+    margin-top: 50px;
+    background-color: #6009d8;
+    color: #fff;
+    font-size: 60px;
+    padding: 20px 0;
+}
+
+/*only on footer contents*/
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*footer logo styling*/
+.footer-logo {
+    font-size: 1.5px;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul{
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 40px;
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-disclaimer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
