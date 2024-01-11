@@ -3,31 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestNook - Products</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+        /* Add any additional styling for the Product.html page here */
+
+        #productType {
+             margin-bottom: 20px; /* Adjust the value as needed */
+             font-size: medium;
         }
 
-        .top-right-button {
-            position: fixed;
-            top: 10px;
-            right: 10px;
+        body {
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        p{
+            font-weight: 100;
+        }
+        
+        .product-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .product-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-form label {
+            margin-bottom: 8px;
+        }
+
+        .product-form input,
+        .product-form textarea {
             padding: 10px;
-            background-color: #4CAF50;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .product-form button {
+            background-color: #4caf50;
             color: #fff;
+            padding: 12px;
             border: none;
+            border-radius: 4px;
             cursor: pointer;
         }
 
-        .top-right-button:hover {
+        .product-form button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <button class="top-right-button" type="button" onclick="location.href='add_detail_of_small_business.html'">Add</button>
+    <nav class="navbar">
+        <!-- Your existing navigation content -->
+    </nav>
 
+    <div class="product-container">
+        <h1>Submit Your Product Idea</h1>
+        <p>Connect with investors by sharing details about your product.</p>
+
+        <form class="product-form" action="database1.php" method="post" enctype="multipart/form-data">
+            
+            <label for="productType">Product Type:</label>
+            <select id="productType" name="productType">
+                <option value="Food">Food</option>  
+                <option value="Instuments">Instruments</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Bakery">Bakery</option>
+              </select>
+
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productQuantity">Product Quantity:</label>
+            <input type="number" id="productQuantity" name="productQuantity" required>
+
+            <label for="productDescription">Product Description:</label>
+            <textarea id="productDescription" name="productDescription" rows="3" required></textarea>
+
+            <label for="Location">Location:</label>
+            <textarea id="Location" name="Location" rows="4" required></textarea>
+
+
+            <label for="productPhotos">Upload Photos (max 3):</label>
+            <input type="file" id="productPhotos" name="productPhotos" accept="image/*" multiple required>
+<input type="submit" value="submit" />
+        </form>
+    </div>
+
+    <div class="footer">
+        <!-- Your existing footer content -->
+    </div>
+
+  <!--  <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+-->
 </body>
 </html>
